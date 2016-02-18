@@ -1,0 +1,45 @@
+.work-level1 {
+    display: none;
+}
+
+.work-level1-visible {
+    display: inline;
+}
+
+.ed-level1 {
+    display: none;
+}
+
+.ed-level1-visible {
+    display: inline;
+}
+
+.work-level2 {
+    display: none;
+}
+
+.work-level2-visible {
+    display: inline;
+}
+
+.ed-level2 {
+    display: none;
+}
+
+.ed-level2-visible {
+    display: inline;
+}
+
+#site1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 50;
+    left: 30px;
+}
+
+#site1img {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}

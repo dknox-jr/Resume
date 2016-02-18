@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Interactive R&#233sum&#233 - Dave Knox</title>
+    <!-- CSS3 Styles -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <!-- jQuery theme used on pop-up windows -->
+    <link href="css/jquery-ui-smoothness.css" rel="stylesheet">
+    <!-- my CSS for interactive toggle behavior -->
+    <link href="css/custom-styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+        <div id="site1">
+      <img id="site1img" src="media/pdxcodeguildlogo%20(2).svg" />
+  </div>
+      <!-- Header with title & navigation bar -->
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active">
+                <a href="#">Home</a>
+            </li>
+            <!-- the "About" pop-up window -->
+            <li role="presentation">
+                <a href="#" id="about">About</a>
+                <div id="about-dialog" title="About Me" style="display: none;">
+                    <p>I am a computer programmer in Portland, Oregon.  I studied coding at
+                    PDX Code Guild and writing and religion at the Johnston Center for Integrative Studies
+                    at the University of Redlands.</p>
+                    <p>We believe in being stewards of the earth, living modestly.  We support the local
+                    economy as much as possible, and local farms through CSA shares.  My wife and I built our own
+                    tiny home on a trailer that we lived in for two years.  We recently moved out when our son
+                    started walking.</p>
+                    <p>I am a cowboy poet, with dreams of being free in all aspects of life.  In my mind there is a
+                    picture of a small family farm, with a creek running through, my wife tending her
+                    garden and our son playing in the fields and trees.</p>
+                    <p>I enjoy reading and writing, coding, a friendly game of cards, taking my son to the pool,
+                    going to big movie premiers, and having a drink with a good friend.</p>
+                </div>
+            </li>
+            <!-- the "Cover Letter" pop-up window -->
+            <li role="presentation">
+                <a href="#" id="cover-letter">Cover Letter</a>
+                <div id="cover-letter-dialog" title="Cover Letter" style="display: none;">
+                    <p>Dear Azure Standard Human Resources Team,</p>
+                    <p>I would like to submit this letter and accompanying r&#233sum&#233
+                    for consideration as application for the Technical Project Manager position with Azure Standard.
+                    I have several years of experience in management and logistics, and I've made a career move
+                    into the technology industry beginning with an education and training in computer programming.</p>
+                    <p>I am a graduate and current active member of PDX Code Guild, a Portland, OR based
+                    coding school with an emphasis on Python, Django, JavaScript, SQL, HTML5 & CSS3.  The
+                    school inspired me to keep on learning and creating, and I have been actively continuing
+                    to grow as a programmer since graduating at the end of February.  Two of my greatest passions
+                    are building things and being surrounded by potent creative energy.  That is one of the reasons
+                    I am interested in taking my management background and making it a part of my move into the tech
+                    sector.</p>
+                    <p>There are several reasons I would be an ideal candidate for the Technical Project Manager
+                    position.  First, on the technical side, I have a solid foundation in several of the core
+                    technologies & platforms your company already uses, and my experience has shown that I am
+                    more than capable of picking up new ones quickly as needed.  Second, my experience as a team
+                    leader and manager in logistics and warehousing shows that I will have an ability to
+                    communicate with both internal and external clients for the technical projects I would be
+                    managing.  Since warehousing and distribution is a large part of what Azure does, my background would
+                    allow me to quickly grasp many of the problems you face and help develop solutions for them.  Finally,
+                    and perhaps most important, my family's values align strongly with Azure Standard's mission.</p>
+                    <p>I live in Portland with my wife and son, and I would be more than happy to commute
+                    to work on site a couple days a week as the job requires.  Thank you very much for your
+                    time and consideration.</p>
+                    <p>Sincerely,</p>
+                    <p>David G. Knox, Jr.</p>
+                </div>
+            </li>
+            <!-- the "Resume" pop-up window -->
+            <li role="presentation">
+                <a href="media/Resume.pdf" id="resume">R&#233sum&#233</a>
+                <div id="resume-dialog" title="R&#233sum&#233" style="display: none;">
+                    <div style="text-align: center;">
+                        <p>Please note: much of the information here is covered in greater detail on the main page.</p>
+                        <p>Open the printer friendly PDF version by clicking
+                            <a href="media/Resume.pdf" target="_blank">here.</a>
+                        </p>
+                <!--        <p>David G. Knox, Jr.<br>
+                        737 NE 99th Ave * Portland, OR 97220 * (503) 933-7350 * dknox.jr@gmail.com</p>
+                    </div>
+                    <p style="text-align: center; font-weight: bold; font-style: oblique;">SKILLS</p>
+                    <ul style="list-style-type: circle;">
+                        <li>Customer relations oriented</li>
+                        <li>Management and training of employees</li>
+                        <li>Python, Django, & Javascript training & experience</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Excellent written communication skills</li>
+                        <li>Event planning, organizing, and directing experience</li>
+                        <li>Professional level mediation and negotiating skills</li>
+                        <li>Proficiency in Microsoft Office and Adobe CreativeSuite programs</li>
+                    </ul>
+                    <p style="text-align: center; font-weight: bold; font-style: oblique;">EXPERIENCE</p>
+                    <ul style="list-style-type: circle;">
+                        <li>Guild Member/Developer * PDX Code Guild * Portland, OR * Oct 2014-Current</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Computer programming, wrote programs in Python, built web apps using
+                        the Django framework, built Python & Django based website with Javascript,
+                        HTML, & CSS.</li>
+                        <li>Warehouse Manager * Accurate Corporate Services * Wilsonville, OR * Nov 2009-Nov 2014</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Manage daily activity,
+                        supervise employees, liaise with office, field staff,
+                        and customers, control customer inventory, meet changing deadlines, multitask,
+                        prioritize projects, coordinate details with staff and management,
+                        train and evaluate employees, daily status briefs</li>
+                        <li>Community Assistant * University of Redlands * Redlands, CA * August 2004-May 2005</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Counseled residents, liaison between students and Student Life department, administrative
+                        paperwork/documentation, educational/social programming</li>
+                        <li>Course Design and Facilitation * University of Redlands * September 2004-May 2005</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Designed and taught academic course called “Self Exploration: Religion,” worked with
+                        professor who sponsored the course, organized field trips, guided and evaluated students</li>
+                        <li>Volunteer * Mid-Oregon Area Special Olympics * Redmond, OR * March-May 2001</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Planned, organized, and directed regional sporting event for more than 50 athletes,
+                        secured location, donations of food/drinks/equipment, recruited over 60 volunteers</li>
+                    </ul>
+                    <p style="text-align: center; font-weight: bold; font-style: oblique;">Education</p>
+                    <ul style="list-style-type: circle">
+                        <li>PDX Code Guild, Portland, OR * October 2014-February 2015</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Learned computer programming,
+                        wrote programs in Python, built web apps using the Django
+                        framework, built website using Python, Django, Javascript, HTML, & CSS stack</li>
+                        <li>Johnston Center for Integrative Studies at the University of Redlands, California</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Graduated in May 2006, earned an interdisciplinary Bachelor of Arts degree with
+                        an emphasis in writing/philosophy/religious studies, non-traditional evaluation system</li>
+                        <li style="list-style-type: square; margin-left: 20px;">Admitted with honors in 2002, earned and maintained Achievement Award scholarship
+                        throughout four years, inducted into Xi of California Phi Beta Kappa Society in
+                        April 2006, Graduated with Departmental Honors in Creative Writing in May 2006,
+                        great academic record of written evaluations supplemented by a 4.0 GPA for two
+                        traditionally evaluated courses</li>
+                    </ul>
+                </div>    -->
+            </li>
+            <!-- the "Contact" pop-up window -->
+            <li role="presentation">
+                <a href="#" id="contact">Contact</a>
+                <div id="contact-dialog" title="Contact Me" style="display: none; text-align: center;">
+                    <a href="mailto:dknox.jr@gmail.com" target="_blank" style="outline: none;">
+                        <img src="media/gmail-icon.jpg" height="112px" width="112px" style="margin-top: 4px;">
+                    </a>
+                    <a href="http://www.linkedin.com/in/dknoxjr" target="_blank" style="outline: none;">
+                        <img src="media/linkedin-icon.png" height="100px" width="100px" style="margin-right: 6px;">
+                    </a>
+                    <a href="http://www.facebook.com/david.knox.581" target="_blank" style="outline: none;">
+                        <img src="media/facebook-icon.jpg" height="100px" width="100px" style="margin-right: 2px;">
+                    </a>
+                    <a href="http://www.github.com/dknox-jr" target="_blank" style="outline: none;">
+                        <img src="media/github-icon.png" height="105px" width="105px">
+                    </a>
+                    <p>David G. Knox, Jr.<br>
+                    737 NE 99th Ave.<br>
+                    Apartment 16<br>
+                    Portland, OR 97220<br>
+                    1 (503) 933-7350<br>
+                    dknox.jr@gmail.com</p>
+                </div>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted" style="color: #ab5400;">Application for Technical Project Manager</h3>
+      </div>
+
+      <!-- the "Jumbotron" - marquee, photo, blurb -->
+      <div class="jumbotron">
+        <h2>David G. Knox, Jr.</h2>
+        <!-- rotating marquee -->
+        <ul id="queue">
+            <li class="queue_item" style="margin: 100px;">
+                <h3>Python</h3>
+            </li>
+            <li class="queue_item">
+                <h3>Javascript</h3>
+            </li>
+            <li class="queue_item" style="margin-left: 150px;">
+                <h3>HTML5</h3>
+            </li>
+            <li class="queue_item" style="margin-top: 50px; margin-left: 75px;">
+                <h3>CSS3</h3>
+            </li>
+            <li class="queue_item" style="margin-left: 100px; margin-top: 300px;">
+                <h3>JSON</h3>
+            </li>
+            <li class="queue_item" style="margin-left: 400px;">
+                <h3>jquery</h3>
+            </li>
+            <li class="queue_item" style="margin: 200px;">
+                <h3>AJAX</h3>
+            </li>
+            <li class="queue_item" style="margin-left: 350px; margin-top: 200px;">
+                <h3>MVC frameworks</h3>
+            </li>
+        </ul>
+        <!-- main photograph & introduction text -->
+        <img src="media/David_1174.JPG" height="100%" width="100%">
+        <p class="lead">My name is Dave Knox.  I am a computer programmer trained in Python &
+        Javascript, HTML5 & CSS3, and frameworks such as Django & Bootstrap.  My work background is largely
+        in Management and Logistics, with an Education in Computer Programming & Writing.</p>
+        <p>I hope this website will provide a more interactive and interesting r&#233sum&#233 viewing experience,
+        but feel free to click on the links above for some shorter, black & white versions.  Thank you for taking a look!</p>
+      </div>
+
+      <div class="row marketing">
+        <!-- left column -->
+        <div class="col-lg-6">
+          <h3>Work History</h3>
+          <p>A story of taking on leadership positions and loving it; responsibilities and relishing in it.
+          A story with a beginning at the bottom and old-fashioned bootstrapping...each step of the way.</p>
+          <p>
+              <a class="btn btn-default no-default" id="show-work-button" role="button" href="" onclick="showWork()">View details &raquo;</a>
+          </p>
+          <div class="work-level1" id="manager1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">Accurate Corporate Services</h4>
+              <img src="media/acslogo.svg" height="60px" width="100px" style="float: left;">
+              <h5 style="font-weight: bold;">Warehouse Manager</h5>
+              <p>Accurate Corporate Services installs commercial furnishings in the Portland area.
+              I managed their 30,000 sq. ft. warehouse for most of my 6 years with the company.
+                  <a href="" class="no-default" id="show-manager-button" onclick="showManager()">View details...</a>
+              </p>
+          </div>
+          <div class="work-level2" id="manager2">
+              <p>I started out with the company putting furniture together, and worked my way to manager,
+              overseeing all shipping and receiving, inventory control, equipment and fleet, and being responsible
+              for the work of the 3-8 men who worked for me on any given day.</p>
+              <p>Some responsibilities included:</p>
+              <ul>
+                  <li>manage daily warehouse activity</li>
+                  <li>supervise several employees</li>
+                  <li>liaise with office, staff, and customers</li>
+                  <li>control customer inventory</li>
+                  <li>meet changing deadlines</li>
+                  <li>multitask and prioritize projects</li>
+                  <li>coordinate details with staff and management</li>
+                  <li>train & evaluate employees</li>
+                  <li>report during daily status meetings</li>
+              </ul>
+              <p>Some skills I demonstrated:</p>
+              <ul>
+                  <li>people & time management</li>
+                  <li>communication</li>
+                  <li>project management</li>
+                  <li>conflict resolution</li>
+                  <li>disciplinary actions</li>
+                  <li>progress updates to clients</li>
+                  <li>computer skills</li>
+              </ul>
+              <p>I also:</p>
+              <ul>
+                  <li>quickly moved into the management position</li>
+                  <li>was awarded some of the largest wage increases ever given by the company</li>
+                  <li>was a leader through change in company ownership</li>
+                  <li>learned and used project management software</li>
+                  <li>served several years on the company's safety committee</li>
+                  <li>took on and consolidated responsibilities formerly spread out among different departments</li>
+                  <li>streamlined the inventory control process</li>
+                  <li>did copy editing for the company's website and brochures</li>
+                  <li>was responsible for selecting and refining my team</li>
+              </ul>
+              <a href="" class="no-default" id="hide-manager-button" onclick="hideManager()">...hide details</a>
+          </div>
+          <div class="work-level1" id="framer1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">Dave Knox Construction</h4>
+              <img src="media/construction.jpg" height="70px" width="100px" style="float: left; margin-right: 5px;">
+              <h5 style="font-weight: bold;">Residential & Commercial Framer</h5>
+              <p>After college I felt a call to get back to my roots, so I swung hammers
+              in the family business for 2 years.
+                  <a href="" class="no-default" id="show-framer-button" onclick="showFramer()">View details...</a>
+              </p>
+          </div>
+          <div class="work-level2" id="framer2">
+              <p>Some responsibilities included:</p>
+              <ul>
+                  <li>following site plans</li>
+                  <li>communicating with team and customers</li>
+                  <li>responding to changing customer demands</li>
+                  <li>meeting code & building to higher standards</li>
+                  <li>meeting strict time deadlines</li>
+              </ul>
+              <p>What I liked most about this job was the feeling of satisfaction at the end of the day,
+              looking back with the crew at what we accomplished with our skill and labor.</p>
+              <a href="" class="no-default" id="hide-framer-button" onclick="hideFramer()">...hide details</a>
+          </div>
+          <div class="work-level1" id="intern1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">Central City Lutheran Mission</h4>
+              <img src="media/mission.svg" height="100px" width="80px" style="float: left;">
+              <h5 style="font-weight: bold;">Educational Internship</h5>
+              <p>A brief internship as part of a course on Hunger & Homelessness.
+                  <a href="" class="no-default" id="show-intern-button" onclick="showIntern()">View details...</a>
+              </p>
+          </div>
+          <div class="work-level2" id="intern2">
+              <p>We worked with the mission and learned what they do to help in their community on issues
+              of homelessness, poverty, HIV/AIDS victims, and inner-city youth in one of the most
+              impoverished and crime-ridden communities in the U.S.</p>
+              <p>Some responsibilities included:</p>
+              <ul>
+                  <li>learning the inner-workings of Non-Profit Organizations</li>
+                  <li>working with kids in their after-school program</li>
+                  <li>working with the homeless outreach program</li>
+                  <li>reporting to others about our learning experiences</li>
+              </ul>
+              <a href="" class="no-default" id="hide-intern-button" onclick="hideIntern()">...hide details</a>
+          </div>
+          <div class="work-level1" id="CA1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">University of Redlands</h4>
+              <img src="media/redlandslogo%20(1).svg" height="100px" width="80px" style="float: left; margin-bottom: 5px;">
+              <h5 style="font-weight: bold;">Community Assistant</h5>
+              <p>I served as a Community Assistant on the Residence Life staff,
+              where I honed my skills in communication, negotiation, confrontation management, and consensus building.
+                  <a href="" class="no-default" id="show-CA-button" onclick="showCA()">View details...</a>
+              </p>
+          </div>
+          <div class="work-level2" id="CA2">
+              <p>I was selected by the student community to serve in a leadership role, charged with the
+              well-being of the hall and the students who lived there.</p>
+              <p>Some responsibilities included:</p>
+              <ul>
+                  <li>counseling students</li>
+                  <li>liaise between students and Student Life department</li>
+                  <li>administrative paperwork & documentation</li>
+                  <li>educational & social programs</li>
+                  <li>crisis intervention</li>
+                  <li>conflict resolution</li>
+              </ul>
+              <a href="" class="no-default" id="hide-CA-button" onclick="hideCA()">...hide details</a>
+          </div>
+          <div class="work-level1" id="facilitator1">
+              <h5 style="font-weight: bold;">Course Facilitator</h5>
+              <p>I designed and taught an accredited college level course for the University through the Johnston
+              Center and the Religious Studies department.
+                  <a href="" class="no-default" id="show-facilitator-button" onclick="showFacilitator()">View details...</a>
+              </p>
+          </div>
+          <div class="work-level2" id="facilitator2">
+              <p>I presented an idea for a course called Self Exploration: Religion.  The focus was on
+              investigating world religions with a goal of the students' active discovery of the material's
+              moral and ethical implications in their own lives.  The course was sponsored by a professor
+              of the Religious Studies department.</p>
+              <p>Some responsibilities included:</p>
+              <ul>
+                  <li>Researching, collecting, and refining all course material</li>
+                  <li>Writing a course description and syllabus</li>
+                  <li>Teaching course material and facilitating each class discussion</li>
+                  <li>Creating assignments for the class</li>
+                  <li>Guiding students through the process of defining their final projects</li>
+                  <li>Planning & organizing several class field trips</li>
+                  <li>Evaluating each student on their participation, presentation, and project</li>
+              </ul>
+              <a href="" class="no-default" id="hide-facilitator-button" onclick="hideFacilitator()">...hide details</a>
+          </div>
+          <div class="work-level1" id="volunteer1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">Mid-Oregon Special Olympics</h4>
+              <img src="media/olympics.svg" height="100px" width="80px" style="float: left;">
+              <h5 style="font-weight: bold;">Event Organizer</h5>
+              <p>This was one of those life experiences I will never forget, and still one I am most proud to have done.
+                  <a href="" class="no-default" id="show-volunteer-button" onclick="showVolunteer()">View details...</a>
+              </p>
+          </div>
+          <div class="work-level2" id="volunteer2">
+              <p>I organized a spring regional Track & Field meet for the Mid-Oregon Area Special Olympics, with dozens of
+              events for over 50 athletes from around the state.</p>
+              <p>Some responsibilities included:</p>
+              <ul>
+                  <li>organizing details with the Area Director</li>
+                  <li>recruiting over 60 volunteers</li>
+                  <li>delegating responsibilities</li>
+                  <li>recruiting entertainment</li>
+                  <li>acquiring competition and PA equipment</li>
+                  <li>scouting for appropriate space and facilities</li>
+                  <li>seeking donations for food and drinks</li>
+                  <li>organizing awards ceremony</li>
+              </ul>
+              <p>The best part about organizing this event is that I know several people who volunteered
+              for the first time, only to put in years of more volunteer work for the organization afterwards.</p>
+              <a href="" class="no-default" id="hide-volunteer-button" onclick="hideVolunteer()">...hide details</a>
+          </div>
+          <hr style="border-color: #ab5400;">
+          <p style="clear: both;"><a class="btn btn-default work-level1 no-default" id="hide-work-button" href="#" role="button" onclick="hideWork()">Hide details &raquo;</a></p>
+        </div>
+        <!-- right column -->
+        <div class="col-lg-6">
+          <h3>Education & Training</h3>
+          <p>A graduate of a tier 1 liberal arts university and a high intensity computer programming
+              trade school, I believe being a well-rounded man is more important than ever in today's society.</p>
+          <p>
+              <a class="btn btn-default no-default" id="show-ed-button" href="#" role="button" onclick="showEd()">View details &raquo;</a>
+          </p>
+          <div class="ed-level1" id="guild1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">PDX Code Guild</h4>
+              <img src="media/pdxcodeguildlogo%20(2).svg" height="100px" width="100px" style="float: left;">
+              <h5 style="font-weight: bold;">Certificate</h5>
+              <p>PDX Code Guild is the only tech trade-school of its kind licensed by the State of Oregon Board
+              of Higher Education.
+                  <a href="" class="no-default" id="show-guild-button" onclick="showGuild()">View details...</a>
+              </p>
+          </div>
+          <div class="ed-level2" id="guild2">
+              <p>Life experience taught me that I love to create.  PDX Code Guild taught me what I need
+              to know to live out my passion.</p>
+              <p>In this intense course I learned:</p>
+              <ul>
+                  <li>Full Stack Development</li>
+                  <li>Object Oriented Programming</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Django</li>
+                  <li>JSON</li>
+                  <li>AJAX</li>
+                  <li>SQL</li>
+                  <li>MVC concepts</li>
+                  <li>Database modeling</li>
+                  <li>DOM manipulation</li>
+                  <li>Linux command line</li>
+                  <li>Git/VCS </li>
+                  <li>Open Source tools</li>
+              </ul>
+              <p>Code Guild introduced me to many valuable resources such as:</p>
+              <ul>
+                  <li>Mozilla Developer Network</li>
+                  <li>StackOverflow</li>
+                  <li>CheckiO</li>
+                  <li>W3 Schools</li>
+                  <li>and other open source project documents</li>
+              </ul>
+              <p>...which has allowed me to learn more...</p>
+              <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                  <li>AWS</li>
+                  <li>etc.</li>
+              </ul>
+              <p>I am still an active member of the PDX Code Guild
+              Community.  I have much more than a programming education.  I am plugged in to an incredible
+              pool of coding and creative talent as a resource, from the growing population of graduates to
+              the most advanced level programmers heading up the Guild.</p>
+              <a href="" class="no-default" id="hide-guild-button" onclick="hideGuild()">...hide details</a>
+          </div>
+          <div class="ed-level1" id="redlands1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">University of Redlands</h4>
+              <img src="media/johnston%20(1).jpg" height="21px" width="100px" style="float: left;">
+              <h5 style="font-weight: bold;">Bachelor of Arts</h5>
+              <p>The University of Redlands is consistently ranked as one of the top universities in the
+                  Western U.S., and the Johnston Center for Integrative Studies is what sets it apart from the rest.
+                  <a href="" class="no-default" id="show-redlands-button" onclick="showRedlands()">View details...</a>
+              </p>
+          </div>
+          <div class="ed-level2" id="redlands2">
+              <p>At the Johnston Center for Integrative Studies at the University of Redlands, students
+              negotiate with professors and administrators to create their own unique interdisciplinary
+              Bachelor Degrees.  The long-winded title of my emphasis was:
+                  <i>"Whereof one cannot Speak...": Studies in the Ineffable through Philosophy, Poetry, & Religion</i>
+              </p>
+              <p>In short, I like to say my degree was an investigation of the things in this world
+              which are most difficult to put into words.</p>
+              <p>Some highlights of my college career were:</p>
+              <ul>
+                  <li>being admitted with honors in Fall of 2002</li>
+                  <li>earned and maintained Achievement Award scholarship throughout all four years</li>
+                  <li>designing and teaching an accredited course in spring of 2005</li>
+                  <li>inducted into Xi of California Phi Beta Kappa Society in April of 2006</li>
+                  <li>graduated with Departmental Honors in Creative Writing in May 2006</li>
+                  <li>great academic record of written evaluations</li>
+                  <li>evaluations supplemented by 4.0 GPA for 2 traditionally evaluated courses</li>
+              </ul>
+              <a href="" class="no-default" id="hide-redlands-button" onclick="hideRedlands()">...hide details</a>
+          </div>
+          <div class="ed-level1" id="redmond1">
+              <hr style="border-color: #ab5400;">
+              <h4 style="font-style: oblique;">Redmond High School</h4>
+              <img src="media/redmond.svg" height="65px" width="100px" style="float: left;">
+              <h5 style="font-weight: bold;">Diploma</h5>
+              <p>It doesn't get much more Hometown, Oregon than this...right here.
+                  <a href="" class="no-default" id="show-redmond-button" onclick="showRedmond()">View details...</a>
+              </p>
+          </div>
+          <div class="ed-level2" id="redmond2">
+              <p>I did well in school, but the things I will always remember most fondly about my youth are:</p>
+              <ul>
+                  <li>playing football in High School</li>
+                  <li>becoming an Eagle Scout</li>
+                  <li>volunteer work for the Special Olympics</li>
+                  <li>4-H clubs for photography and swine</li>
+                  <li>enjoying the outdoors of beautiful Oregon</li>
+                  <li>pumping gas to earn money for my first car</li>
+                  <li>friends that I can still count on</li>
+              </ul>
+              <a href="" class="no-default" id="hide-redmond-button" onclick="hideRedmond()">...hide details</a>
+          </div>
+          <hr style="border-color: #ab5400;">
+          <p>
+              <a class="btn btn-default ed-level1 no-default" id="hide-ed-button" href="#" role="button" onclick="hideEd()">Hide details &raquo;</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer">
+        <p>&copy; David G. Knox, Jr. - 2014 - </p>
+      </footer>
+    </div> <!-- /container -->
+
+    <!-- javaScript & jQuery scripts -->
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/jquery-ui-1.11.4.js"></script>
+    <script src="js/marquee.js"></script>
+    <script src="js/no-default.js"></script>
+    <script src="js/css-toggle.js"></script>
+    <script src="js/dialog-box.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+
+</html>
