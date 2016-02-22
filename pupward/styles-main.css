@@ -1,0 +1,64 @@
+#mainphotodiv {
+    box-shadow: inset 300px 0 100px 100px rgb(255, 255, 255);
+    margin-right: 30px;
+}
+
+body {
+
+}
+
+.center-all {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.foot {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.mainphotodiv {
+    width: 720px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: #FFF 0px 0px 100px 100px inset;
+}
+
+
+.mainphoto {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+}
+
+#nav {
+    width: 200px;
+    height: 900px;
+    background: -webkit-linear-gradient(left, #609732, silver, #609732, black);
+    background: -o-linear-gradient(right, #609732, silver, #609732, black);
+    background: -moz-linear-gradient(right, #609732, silver, #609732, black);
+    background: linear-gradient(to right, #609732, silver, #609732, black);
+    box-shadow: 30px 20px 10px 5px #888;
+    position: absolute;
+    border-top-left-radius: 50px -50px;
+    border-top-right-radius: 50px 0px;
+    z-index: 5;
+    margin-left: 30px;
+}
